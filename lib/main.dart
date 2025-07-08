@@ -19,7 +19,7 @@ class Post {
   }
 }
 
-// FutureBuilder에서 사용할 비동기 함수
+// FutureBuilder에서 사용할 비동기 함수 가져오기기
 Future<List<Post>> fetchPosts() async {
   final response =
       await http.get(Uri.parse('https://jsonplaceholder.typicode.com/posts'));
@@ -36,7 +36,7 @@ void main() {
   runApp(MyApp());
 }
 
-// 메인 앱
+// 메인
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
